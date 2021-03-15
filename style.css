@@ -125,15 +125,7 @@ nav > ul > li:first-child::before {
     width: 33%;
 }
 
-.col-33:first-child {
-    position: relative;
-}
-
-.col-33:nth-child(2) {
-    position: relative;
-}
-
-.col-33:last-child {
+section.row-pics > div.col-33 > div.content{
     position: relative;
 }
 
@@ -173,4 +165,11 @@ a.read-more-link:hover {
 
 .read-more-link:hover:after{
     content: url(img/read-more-blue.png);
+}
+
+
+.row-banners {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
 }
