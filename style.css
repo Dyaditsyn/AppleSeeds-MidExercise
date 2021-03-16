@@ -283,14 +283,6 @@ div.footer-navbar > ul > li > a:hover {
 
 /* -----------main styles contacts------------*/
 
-.forms {
-    width: 58%;
-}
-
-.cards {
-    width: 38%;
-}
-
 .contacts-wrapper {
     width: 900px;
     margin: 0 auto;
@@ -332,6 +324,14 @@ div.footer-navbar > ul > li > a:hover {
     justify-content: space-between;
 }
 
+.forms {
+    width: 58%;
+}
+
+.cards {
+    width: 38%;
+}
+
 .main-header > .top-title > h1 {
     color: #72716d;
     font-size: 15px;
@@ -353,6 +353,15 @@ div.footer-navbar > ul > li > a:hover {
     padding-bottom: 20px;
     border-top: 1px solid #e5e5e5;
     width: 88%;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.form-submitted input:invalid ~ .error {
+    display: inline;
 }
 
 .title-wrapper {
