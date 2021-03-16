@@ -98,13 +98,21 @@ nav > ul > li > a {
     display: inline-block;
     padding-bottom: 20px;
     padding: 0 15px;
+    margin-bottom: 16px;
 }
 
 /*---------------dropdown menu------------------*/
 
+.submenu-content > ul > li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.submenu-content > ul > li:last-child {
+    border-bottom: none;
+}
+
 .submenu-content > ul > li > a {
     display: block;
-    border-bottom: 1px solid #e5e5e5;
     padding: 1px 5px;
 }
 
@@ -124,14 +132,10 @@ nav > ul > .submenu:hover > .submenu-content:hover {
     z-index: 999;
 }
 
-nav > ul > li:hover {
-    display: inline;
-}
-
 .submenu-content {
     position:absolute;
     top: 34px;
-    right: 32px;
+    right: 15px;
     background: linear-gradient(180deg, rgba(170,170,170,1) 0%, 
     rgba(144,144,144,1) 30%, rgba(144,144,144,1) 100%);
     line-height: 1.5em;
