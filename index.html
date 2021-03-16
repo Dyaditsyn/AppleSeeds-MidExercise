@@ -18,9 +18,8 @@
             <div class="row-input">
                 <div class="search">
                     <a class="lang" href="#">English</a>
-                    <label>
-                        <input type="text" placeholder="רשום מילת חיפוש">
-                    </label>
+                    <label for="search"></label>
+                    <input id="search" type="text" placeholder="רשום מילת חיפוש">
                     <div class="search-img">
                         <a class="search-link" href="#">
                             <img class="search-img" src="img/search.png" alt="search button"/>
@@ -32,8 +31,8 @@
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="index.html"><img src="img/home-blue.png" alt="home button"/></a></li>
-                    <li><a href="#">אודות</a>
-                        <!-- <div>
+                    <li class="submenu"><a href="#">אודות</a>
+                        <div class="submenu-content">
                             <ul>
                                <li><a href="#">אודות</a></li>
                                <li><a href="#">היסטוריה</a></li>
@@ -43,62 +42,61 @@
                                <li><a href="#">הנהלת הקבוצה</a></li>
                                <li><a href="#">פרסים והוקרה</a></li>
                             </ul>
-                        </div> -->
-                    </li>
-                    <li><a href="#">חטיבות</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#">חטיבות</a></li>
-                           <li><a href="#">קמעונאות ומסחר</a></li>
-                           <li><a href="#">תעשיות ושירותים</a></li>
-                           <li><a href="#">זיקוק</a></li>
-                        </ul>
-                    </div> -->
-                    <li><a href="#">אחריות תאגידית</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#">אחריות ת</a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul>
-                    </div> -->
-                    <li><a href="#">קשרי משקיעים</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul>
-                    </div> -->
-                    <li><a href="#">התחנות שלנו</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul>
-                    </div> -->
-                    <li><a href="#">קריירה</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul>
-                    </div> -->
-                    <li><a href="#">חדשות ומדיה</a></li>
-                    <!-- <div>
-                        <ul>
-                           <li><a href="#"></a></li>
-                           <li><a href="#"></a></li>
-                        </ul>
-                    </div> -->
+                        </div></li>
+                    <li class="submenu"><a href="#">חטיבות</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">חטיבות</a></li>
+                                <li><a href="#">קמעונאות ומסחר</a></li>
+                                <li><a href="#">תעשיות ושירותים</a></li>
+                                <li><a href="#">זיקוק</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="submenu"><a href="#">אחריות תאגידית</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">אחריות תאגידית</a></li>
+                                <li><a href="#">הקוד האתי</a></li>
+                                <li><a href="#">מעורבות חברתית</a></li>
+                                <li><a href="#">נגישות</a></li>
+                                <li><a href="#">איכות הסביבה ובטיחות</a></li>
+                                <li><a href="#">דירוג מעלה</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="submenu"><a href="#">קשרי משקיעים</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">פרופיל חברה</a></li>
+                                <li><a href="#">דו"חות כספיים</a></li>
+                                <li><a href="#">כלים למשקיע</a></li>
+                                <li><a href="#">נתוני מניה</a></li>
+                                <li><a href="#">אסיפות כלליות</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="submenu"><a href="#">התחנות שלנו</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">התחנות שלנו</a></li>
+                                <li><a href="#">נגישות מתחמי פז</a></li>
+                                <li><a href="#">רשימת תחנות</a></li>
+                                <li><a href="#">מועדונים</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="submenu"><a href="#">קריירה</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">לעבוד בפז</a></li>
+                                <li><a href="#">ניהול תחנת פז</a></li>
+                                <li><a href="#">קריירה</a></li>
+                            </ul>
+                        </div></li>
+                    <li class="submenu"><a href="#">חדשות ומדיה</a>
+                        <div class="submenu-content">
+                            <ul>
+                                <li><a href="#">פרסומות</a></li>
+                                <li><a href="#">הודעות לעיתונות</a></li>
+                            </ul>
+                        </div></li>
                 </ul>
             </nav>
         </div>

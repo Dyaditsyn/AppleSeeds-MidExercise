@@ -22,7 +22,6 @@ header {
     background: linear-gradient(180deg, rgba(144,144,144,1) 0%, 
     rgba(144,144,144,1) 86%, rgba(170,170,170,1) 97%);
     border-bottom: 1px solid rgb(238,238,238);
-    margin-left: 30px;
 }
 
 .paz-logo {
@@ -45,33 +44,28 @@ a.lang:hover,
 nav > ul > li > a:hover{
     text-decoration: underline;
     color: #005CA0;
-    cursor: pointer;
 }
 
 input {
-    border: none;
+    border: 1px solid transparent;
     border-radius: 0 7px 0 0;
     margin-left: 1px;
-    margin-top: 1px;
     width: 130px;
 }
 
 input::placeholder {
     color: black;
     font-size: 11px;
-    padding: 5px;
-}
-
-input.text {
-    width: 80%;
+    padding: 0 5px;
 }
 
 input:focus {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .search {
     margin-top: 20px;
+    margin-left: 5px;
     display: flex;
     justify-content: flex-end;
 }
@@ -88,21 +82,64 @@ nav > ul {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
-    margin-left: 5px;
 }
 
 nav > ul > li:before {
     content: "|";
     color: #b9b9b9;
     opacity: 0.5;
-    margin: 0 16px;
 }
 
 nav > ul > li:first-child::before {
     content: "";
 }
 
-/* --------------main styles----------------- */
+nav > ul > li > a {
+    display: inline-block;
+    padding-bottom: 20px;
+    padding: 0 15px;
+}
+
+/*---------------dropdown menu------------------*/
+
+.submenu-content > ul > li > a {
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1px 5px;
+}
+
+.submenu-content > ul > li > a:hover {
+    background-color: rgb(196, 196, 196);
+    text-decoration: underline;
+    color: #005CA0;
+}
+
+nav > ul .submenu {
+    position: relative;
+}
+
+nav > ul > .submenu:hover > .submenu-content,
+nav > ul > .submenu:hover > .submenu-content:hover {
+    display: block;
+    z-index: 999;
+}
+
+nav > ul > li:hover {
+    display: inline;
+}
+
+.submenu-content {
+    position:absolute;
+    top: 34px;
+    right: 32px;
+    background: linear-gradient(180deg, rgba(170,170,170,1) 0%, 
+    rgba(144,144,144,1) 30%, rgba(144,144,144,1) 100%);
+    line-height: 1.5em;
+    white-space: nowrap;
+    display:none;
+}
+
+/* --------------main styles index-------------- */
 
 .main-wrapper {
     width: 900px;
@@ -240,6 +277,10 @@ div.footer-navbar > ul > li > a:hover {
     padding-top: 10px;
     padding-right: 5px;
 }
+
+/* -----------main styles contacts------------*/
+
+
 
 /*--------------footer styles-----------------*/
 
